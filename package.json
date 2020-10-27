@@ -28,6 +28,7 @@
         "copy:release": "shx mkdir dist/logs && shx cp -r tests native LICENSE README.md package.json dist",
         "config": "shx cp -r config dist",
         "generate-config": "ssh-keygen -f ./config/keys/jwt-private.key -P '' && mv ./config/keys/jwt-private.key.pub ./config/keys/jwt-public.key && cp ./config/development.json.sample ./config/development.json && cp ./config/development.json ./config/production.json && echo {} > ./config/testing.json",
+        "generate": "cd native && ec-generate",
         "bump-version": "npm version -m \"chore(Version): Increment to %s\"",
         "view-docs": "start docs/index.html"
     },
@@ -63,6 +64,7 @@
         "winston-daily-rotate-file": "^3.9.0"
     },
     "devDependencies": {
+        "@eradani-inc/ec-generate": "^3.4.0",
         "@types/chai": "^4.2.7",
         "@types/mocha": "^5.2.7",
         "@types/node": "^13.5.0",
