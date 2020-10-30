@@ -1,0 +1,14 @@
+---
+name: lnxclcmdl
+pgmmodels:
+  LINUX_CALC:
+    params:
+      IBMICORES:
+        type: Packed
+        length: 15
+        precision: 0
+      LINUXSERVERS:
+        type: Packed
+        length: 16
+        precision: 0
+        outputOnly: true
