@@ -64,7 +64,7 @@
         "winston-daily-rotate-file": "^3.9.0"
     },
     "devDependencies": {
-        "@eradani-inc/ec-generate": "^3.4.0",
+        "@eradani-inc/ec-generate": "^3.4.1",
         "@types/chai": "^4.2.7",
         "@types/mocha": "^5.2.7",
         "@types/node": "^13.5.0",
