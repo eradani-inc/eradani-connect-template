@@ -3,8 +3,14 @@
      H**   LINUX_CALC                                               *   
      H***************************************************************   
      H*                                                                 
-     C     *ENTRY        PLIST                                          
-     C                   PARM                    ibmicores        15 0  
-     C                   PARM                    linuxservers     16 0  
-     C     IBMICORES     MULT      40            LINUXSERVERS           
+      *
+      * Include program prototype
+      *
+      /copy LnxCalcItf.rpgleinc
+
+     DLINUX_CALC       PI
+     DIBMICORES                      15P 0
+     DLINUXSERVERS                   16P 0
+
+     C     IBMICORES     MULT      40            LINUXSERVERS
      C                   seton                                        LR
