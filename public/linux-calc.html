@@ -11,7 +11,7 @@
                     method: 'GET'
                 })
                 .done(function(result) {
-                    $('#linuxservers').val(result[0].LINUXSERVERS);
+                    $('#linuxservers').val(result.LINUXSERVERS);
                 });
             });
         });
