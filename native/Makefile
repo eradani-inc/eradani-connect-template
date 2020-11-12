@@ -33,7 +33,7 @@ $(libdir)/LINUX_CALC.PGM: LnxCalcItf.rpgleinc
 
 LnxCalcItf.rpgleinc LnxCalcItf.ts: linux_calc.yaml
 	npm run generate -- -f $<
-	cp LnxClcItf.ts ../src/models
+	cp LnxCalcItf.ts ../src/models
 
 .PHONY: library
 library:
