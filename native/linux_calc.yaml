@@ -2,7 +2,7 @@
 name: LnxCalcItf
 pgmmodels:
   LINUX_CALC:
-    library: \eradaniConnect.native.config.objlib
+    library: \config.eradaniConnect.native.objlib
     params:
       IBMICORES:
         type: Packed

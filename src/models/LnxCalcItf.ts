@@ -10,7 +10,6 @@ const config = configService.get();
 export default new eradaniConnect.run.Pgm('LINUX_CALC', {
     lib: config.eradaniConnect.native.objlib,
     mode: 'ile',
-    keepWhitespace: false,
     params: [
         {
             name: 'IBMICORES',
