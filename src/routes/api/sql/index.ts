@@ -7,7 +7,7 @@ import * as validators from './validators';
 // You can set login requirements on an API endpoint by putting `requireAuth` after the URL specification
 export default function mountSQL(router: Router) {
     router.get(
-        '/customers',
+        '/people',
         validate(validators.getCustomers),
         respond((req: any) => sqlController.getCustomers(req.query))
     );
