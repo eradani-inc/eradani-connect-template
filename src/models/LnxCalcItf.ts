@@ -25,7 +25,7 @@ export default new eradaniConnect.run.Pgm('LINUX_CALC', {
 
 // Input interface
 export interface LnxCalcItfInput {
-    IBMICORES: number;
+    IBMICORES: number | string;
     LINUXSERVERS?: never;
 }
 
