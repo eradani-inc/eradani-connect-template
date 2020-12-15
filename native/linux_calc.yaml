@@ -1,0 +1,15 @@
+---
+name: LnxCalcItf
+pgmmodels:
+  LINUX_CALC:
+    library: \config.eradaniConnect.native.objlib
+    params:
+      IBMICORES:
+        type: Packed
+        length: 15
+        precision: 0
+      LINUXSERVERS:
+        type: Packed
+        length: 16
+        precision: 0
+        outputOnly: true
